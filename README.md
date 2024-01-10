@@ -1,13 +1,9 @@
 Food Inspections Evaluation
 ============================
 
-This is our model for predicting which food establishments are at most risk for the types of violations most likely to spread food-borne illness. Chicago Department of Public Health staff use these predictions to prioritize inspections. During a two month pilot period, we found that that using these predictions meant that inspectors found critical violations much faster.
+This is a fork of the [City of Chicago's model](https://github.com/Chicago/food-inspections-evaluation/tree/master) for predicting which food establishments are at most risk for the types of violations most likely to spread food-borne illness. Chicago Department of Public Health staff use these predictions to prioritize inspections. During a two month pilot period, the analysts found that that using these predictions meant that inspectors found critical violations much faster.
 
-You can help improve the health of our city by improving this model. This repository contains a training and test set, along with the data used in the current model. 
-
-Feel free to clone, fork, send pull requests and to file bugs. 
-Please note that we will need you to agree to our Contributor License Agreement (CLA) in order to be able to use any pull requests.
-
+This repository contains a training and test set, along with the data used in the current model. 
 
 Original Analysis and Reports
 -----------------------------
@@ -27,8 +23,7 @@ All of the code in this project uses the open source statistical application, R.
 Ubuntu users may need to install `libssl-dev`, `libcurl4-gnutls-dev`, and `libxml2-dev`.  This can be accomplished by typing the following command at the command line:
 `sudo apt-get install libssl-dev libcurl4-gnutls-dev libxml2-dev`
 
-The code makes extensive usage of the ``data.table`` package. If you are not familiar with the package, you might want to consult the data.table [FAQ available on CRAN] (http://cran.r-project.org/web/packages/data.table/vignettes/datatable-faq.pdf).
-
+The code makes extensive usage of the ``data.table`` package, which is an awesome package, but not something we teach in Math 237. The goal of this fork is to make the code ``tidyverse``-compatible for use in examples in our Foundations of Data Science class at California State University, Fullerton. I also hope to see how much of this is replicable given similar, though less extensive, data from Los Angeles County Department of Public Health.
 
 FILE LAYOUT
 ------
